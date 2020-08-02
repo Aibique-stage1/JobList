@@ -1,0 +1,318 @@
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Desaturated Dark Cyan: hsl(180, 29%, 50%)
+
+### Neutral
+
+- Light Grayish Cyan (Background): hsl(180, 52%, 96%)
+- Light Grayish Cyan (Filter Tablets): hsl(180, 31%, 95%)
+- Dark Grayish Cyan: hsl(180, 8%, 52%)
+- Very Dark Grayish Cyan: hsl(180, 14%, 20%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Headings
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 500, 700 */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+:root{
+    /* ## Colors */
+
+    /* ### Primary */
+    
+    --DesaturatedDarkCyan: hsl(180, 29%, 50%);
+    --DesaturatedDarkCyanShadow: hsla(180, 29%, 50%, 0.280);
+    --DesaturatedDarkCyanShadow2: rgba(126, 197, 197, 0.233);
+    
+    /* ### Neutral */
+    
+    --LightGrayishCyanBg: hsl(180, 52%, 96%);
+    --LightGrayishCyanFilterTable: hsl(180, 31%, 95%);
+    --DarkGrayishCyan: hsl(180, 8%, 52%);
+    --VeryDarkGrayishcyan: hsl(180, 14%, 20%);
+}
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+body{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8em 1fr 3em;
+}
+
+.the-changed{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8em 10rem 1fr 3em;
+    background-color: var(--LightGrayishCyanBg);
+    font-size: 80%;
+}
+
+
+.extra-container{
+    color: var(--DesaturatedDarkCyan);
+    background-color: var(--LightGrayishCyanFilterTable);
+    margin: 0 15%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: -2.3rem;
+    padding: 1rem;
+    box-shadow: 1px 5px 15px var(--DesaturatedDarkCyanShadow);
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.extra-container p{
+    padding: 5px;
+    cursor: pointer;
+    font-size: 110%;
+}
+.el-label{
+    background-color: var(--DesaturatedDarkCyanShadow2);
+    font-weight: bolder;
+    padding: 2px;
+}
+.jam{
+    background-color: var(--DesaturatedDarkCyan);
+    color: var(--LightGrayishCyanFilterTable);
+}
+.extra-container a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--DesaturatedDarkCyan);
+    background-color: var(--DesaturatedDarkCyanShadow2);
+    font-weight: bolder;
+    padding: 2px;
+    font-size: 85%;
+    border-radius: 5px;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+header{
+    background-color: var(--DesaturatedDarkCyan);
+}
+header div{
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/bg-header-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+
+
+
+
+
+
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+main{
+    /* width: 100vw; */
+    background-color: var(--LightGrayishCyanBg);
+    display: grid;
+    padding: 3rem 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 15rem);
+    grid-row-gap: 3rem;
+}
+
+.job-container{
+    background-color: var(--LightGrayishCyanFilterTable);
+    border-radius: 10px;
+    padding-left: 1.3rem;
+    padding-right: 1rem;
+    box-shadow: 1px 5px 15px var(--DesaturatedDarkCyanShadow);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+}
+.hide{
+    display: none;
+}
+
+.job-header{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.feature{
+    border-left: 5px solid var(--DesaturatedDarkCyan);
+}
+
+
+.logo-company{
+    width: 50px;
+    height:50px;
+    display: inline-block;
+    position: relative;
+    top:-25px;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logo-company img{
+    width: 100%;
+}
+
+.job-header p{
+    position: relative;
+    top: -20px;
+    line-height: 1.6rem;
+}
+.job-header p:nth-of-type(1){
+    color: var(--DesaturatedDarkCyan);
+    font-weight: bold;
+    font-size: 70%;
+}
+.label-new{
+    margin-left: 1.3rem;
+    background-color: var(--DesaturatedDarkCyan);
+    color: var(--LightGrayishCyanBg);
+    padding:4px 6px;
+    letter-spacing: 1px;
+    border-radius: 50px
+}
+.label-featured{
+    margin-left: 1.3rem;
+    background-color: var(--VeryDarkGrayishcyan);
+    color: var(--LightGrayishCyanBg);
+    padding:4px 6px;
+    letter-spacing: 1px;
+    border-radius: 50px
+}
+
+.job-header p:nth-of-type(2){
+    color: var(--VeryDarkGrayishcyan);
+    font-size: 90%;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.job-header p:nth-of-type(3){
+    color: rgb(153, 153, 153);
+    font-weight: lighter;
+    font-size: 70%;
+}
+.what{
+    margin: 0 1.3rem;
+    position: relative;
+}
+.what::before,
+.what::after{
+    content: ".";
+    color: rgb(153, 153, 153) ;
+    font-size: 190%;
+    position: absolute;
+}
+.what::before{
+    bottom:0;
+    right: 110%;
+}
+.what::after{
+    bottom:0;
+    left: 110%;
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+.job-main{
+    width: 100%;
+    border-top: 1px solid rgb(153, 153, 153) ;
+    padding-right: 20px;
+}
+.job-main p{
+    display: grid;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.job-main span{
+    font-weight: bold;
+    font-size: 70%;
+    flex-grow: 1;
+    padding: 10px 15px;
+    border-radius: 40px;
+    background-color: hsla(180, 29%, 50%, 0.062);
+    color: var(--DesaturatedDarkCyan);
+    width: min-content;
+    cursor: pointer;
+    
+}
+.job-main span:hover{
+    --DesaturatedDarkCyan-hover: hsl(180, 89%, 24%);
+    background-color: hsla(180, 29%, 50%, 0.274);
+    color: var(--DesaturatedDarkCyan-hover);
+
+}
+
+
+
+
+
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+footer{
+    background-color: blueviolet;
+}
+footer.attribution{
+    font-size:75%;
+}
+

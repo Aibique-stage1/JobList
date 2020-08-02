@@ -1,0 +1,199 @@
+@media screen and (min-width:767px){
+
+
+
+    .the-changed{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8em 10rem 1fr 3em;
+        background-color: var(--LightGrayishCyanBg);
+        font-size: 80%;
+    }
+    
+    
+    .extra-container{
+        color: var(--DesaturatedDarkCyan);
+        background-color: var(--LightGrayishCyanFilterTable);
+        margin: 0 15%;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        top: -2.3rem;
+        padding: 1rem;
+        box-shadow: 1px 5px 15px var(--DesaturatedDarkCyanShadow);
+        align-items: center;
+        flex-wrap: wrap;
+    
+    }
+    .extra-container p{
+        padding: 5px;
+        cursor: pointer;
+        font-size: 110%;
+    }
+    .el-label{
+        background-color: var(--DesaturatedDarkCyanShadow2);
+        font-weight: bolder;
+        padding: 2px;
+    }
+    .jam{
+        background-color: var(--DesaturatedDarkCyan);
+        color: var(--LightGrayishCyanFilterTable);
+    }
+    .extra-container a{
+        text-decoration: underline;
+        cursor: pointer;
+        color: var(--DesaturatedDarkCyan);
+        background-color: var(--DesaturatedDarkCyanShadow2);
+        font-weight: bolder;
+        padding: 2px;
+        font-size: 85%;
+        border-radius: 5px;
+        position: absolute;
+        right:10px;
+        bottom:10px;
+    }
+
+
+
+
+
+
+
+
+.job-container{
+        display: flex;
+        align-items: center
+}
+/* /////////////////////// */
+.logo-company{
+    height:70px;
+    width: 70px;
+    display: inline-block;
+    position: relative;
+    top:-25px;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* /////////////////////// */
+.job-main{
+    border-top: transparent ;
+}
+.job-main p{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+}
+
+
+
+@media screen and (min-width:1024px){
+
+
+    .the-changed{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8em 10rem 1fr 3em;
+        background-color: var(--LightGrayishCyanBg);
+        font-size: 80%;
+    }
+    
+    
+    .extra-container{
+        color: var(--DesaturatedDarkCyan);
+        background-color: var(--LightGrayishCyanFilterTable);
+        margin: 0 15%;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        top: -2.3rem;
+        padding: 1rem;
+        box-shadow: 1px 5px 15px var(--DesaturatedDarkCyanShadow);
+        align-items: center;
+        flex-wrap: wrap;
+    
+    }
+    .extra-container p{
+        padding: 5px;
+        cursor: pointer;
+        font-size: 110%;
+    }
+    .el-label{
+        background-color: var(--DesaturatedDarkCyanShadow2);
+        font-weight: bolder;
+        padding: 2px;
+    }
+    .jam{
+        background-color: var(--DesaturatedDarkCyan);
+        color: var(--LightGrayishCyanFilterTable);
+    }
+    .extra-container a{
+        text-decoration: underline;
+        cursor: pointer;
+        color: var(--DesaturatedDarkCyan);
+        background-color: var(--DesaturatedDarkCyanShadow2);
+        font-weight: bolder;
+        padding: 2px;
+        font-size: 85%;
+        border-radius: 5px;
+        position: absolute;
+        right:10px;
+        bottom:10px;
+    }
+
+
+
+
+
+    .job-header{
+        position: relative;
+    }
+    .job-header p{
+        position: relative;
+        left: 25%;
+        top: 0;
+        line-height: 1.6rem;
+    }
+    .logo-company{
+        width: 90px;
+        height:90px;
+        display: inline-block;
+        position: absolute;
+        top: -10px;
+        border-radius: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .job-header p:nth-of-type(1){
+        color: var(--DesaturatedDarkCyan);
+        font-weight: bold;
+        font-size: 70%;
+        width: max-content;
+    }
+    .job-header p:nth-of-type(2){
+        color: var(--VeryDarkGrayishcyan);
+        font-size: 90%;
+        letter-spacing: 1px;
+        font-weight: bold;
+        width: max-content;
+    }
+    
+    .job-header p:nth-of-type(3){
+        color: rgb(153, 153, 153);
+        font-weight: lighter;
+        font-size: 70%;
+        width: max-content;
+    }
+    .hide{
+        display: none;
+    }
+}
